@@ -3,11 +3,13 @@ n = int(input("input a number ")) #asks for the number and forces to be an integ
 print (n <= 100) # prints the number, equal or less than 100 = true
 
 # 3.1.1.10
-print ("Spathiphyllum is the best plant ever!")
-a = input("what is your favouraite plant? ")
-if a == spathiphyllum: 
-    print("No, I want big Spathiphyllum")
-    elif a == SPATHIPHYLLUM:
-        print("Yes - Spathiphyllum is the best plant ever")
-    else a == :
-        print ("Spathiphyllum Not [input]!")
+print ("Spathiphillum is the best plant ever!")
+x = input("Whats your favourite plant?: ") # asks for string input
+
+if x == "SPATHIPHILLUM": # == equal to correct responce
+    print("Yes - Spathiphyllum is the best plant ever!") # indented
+elif x == "spathiphyllum": # elif continues down until responce == equal
+    print("No, I want a big Spathiphyllum!") # indented
+else: # final responce
+    print("Spathiphyllum! Not", x + "!!!!!!!") # prints string and recals input (X)
+
