@@ -13,3 +13,21 @@ elif x == "spathiphyllum": # elif continues down until responce == equal
 else: # final responce
     print("Spathiphyllum! Not", x + "!!!!!!!") # prints string and recals input (X)
 
+# 3.1.1.11
+income = float(input("Enter the annual income: ")) # float as 0.0 needed
+exempt = input("Are you Tax exempt? Y/N? ") # string required for A-Z input
+jury = input("Have you completed Jury Duty this finacial year? Y/N? ") # str input
+
+if income < 85528: # if / elif / else
+    tax = (income * 0.18) - 556.02 # indented - (income * 18%) minus £556.02
+else:
+    tax = (income - 85528) * 0.32 + 14839.02  # indented - income minus tax allowance * 32%
+if tax < 0.0: # negates minus values in the calculation
+	tax = 0.0
+elif exempt == "Y": # how do you put "y"? or "y" - returns calculations of 0.0????
+    tax = 0.0
+elif jury == "Y":
+    tax = tax /2 # pays 50% less tax
+
+tax = round(tax, 0) # rounds from float 0.0 to int (whole number) to display
+print("The tax is:", tax, "thalers")  # prints calculation
