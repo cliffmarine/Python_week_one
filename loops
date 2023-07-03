@@ -1,3 +1,4 @@
+# leapyear example
 year = int(input("Enter a year: "))
 
 if year < 1582:
@@ -12,3 +13,31 @@ else:
     else: year = "leap_year" #otherwise, it's a leap year. 
 
     print ("The year is a", year + "!!!" )
+
+#3.2.1.3
+secret_number = 777  # define secret numbers
+even_closer = 77
+close = 7
+
+print(
+"""
++================================+
+| Welcome to my game, muggle!    |
+| Enter an integer number        |
+| and guess what number I've     |
+| picked for you.                |
+| So, what is the secret number? |
++================================+
+""") # tripple """ allows prinint over multiple lines to create picture
+number = int(input("Enter your guess??? ")) 
+
+while number != secret_number: # create true loop while number does not equal secret number
+    if number == close:
+        print("close, try again") 
+    elif number == even_closer:
+        print ("Even closer, try again")
+    else:
+        print ("\nHa ha! You're stuck in my loop!"*20)# loops 20 times on new line
+    number = int(input("Enter your guess??? ")) # input again before end of while loop
+print ("WELL DONE, MUGGLE! YOU ARE FREE NOW!!") # is only printed when 777 is inputted to exit loop
+
