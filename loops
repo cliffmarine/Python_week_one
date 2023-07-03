@@ -1,0 +1,14 @@
+year = int(input("Enter a year: "))
+
+if year < 1582:
+    print("year is before georgian calender!")
+else: 
+    if year % 4 != 0: #if the year number isn't divisible by four, it's a common year;
+        year = "common_year"
+    elif year % 100 != 0: #otherwise, if the year number isn't divisible by 100, it's a leap year;
+        year = "leap_year"
+    elif year % 400 != 0: #otherwise, if the year number isn't divisible by 400, it's a common year;
+        year = "common_year"
+    else: year = "leap_year" #otherwise, it's a leap year. 
+
+    print ("The year is a", year + "!!!" )
