@@ -48,3 +48,22 @@ for river in range(1,6,1): # define variable=river, set range (start, stop, step
     print(river, "Mississippi") # print variable + mississippi
     time.sleep(1) #pauses loop for 1 second (1)
 print ("Ready or not, here I come!") # print final message after range completes
+
+
+#3.2.1.9
+secret_word = "chupacabra" # defines secret word
+import time # imports time
+print("Can you guess the secret word? ") # asks for str input
+
+while True: # while true loop - loop will continue until the break point
+    word = input("? ") # str input
+    if word == secret_word: # breaks loop if secret line entered
+        break
+    if word != secret_word: # if word does not equal secret word prints below
+        print ("\nNot correct.... I am a reptile....")
+        time.sleep(1) # used to pause loop
+        print ("\nHint - A LEGENDARY LIZARD - Hint")
+        time.sleep(1)
+    word = input("Guess again? ")
+Print ("Well done! I am a CHUPACABRA") # ends loop by break and prints well done
+
