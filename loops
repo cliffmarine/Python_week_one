@@ -41,3 +41,10 @@ while number != secret_number: # create true loop while number does not equal se
     number = int(input("Enter your guess??? ")) # input again before end of while loop
 print ("WELL DONE, MUGGLE! YOU ARE FREE NOW!!") # is only printed when 777 is inputted to exit loop
 
+#3.2.1.6
+import time # uses time??
+
+for river in range(1,6,1): # define variable=river, set range (start, stop, step)
+    print(river, "Mississippi") # print variable + mississippi
+    time.sleep(1) #pauses loop for 1 second (1)
+print ("Ready or not, here I come!") # print final message after range completes
