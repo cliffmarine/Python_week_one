@@ -84,3 +84,27 @@ for letter in word: # letter is a definition NOT a variable
         continue # skips U...
     else: # closes loop 
         print (letter) #prints letters of word minus the vowels (continued statements)
+
+#3.2.1.11
+word = input("Enter a word? ") # Prompt the user to enter a str
+word = word.upper()# .upper() changes the str into all capitals.
+
+word_without_vowels = "" #defines word without vowels but with no information
+# essential to define the word before creating the while/for loop so str
+# information can be added after the calculation
+
+for letter in word: # letter is a definition NOT a variable
+    if letter == "A": # if letter is the same as A
+        continue # skips A in the programme to end of the loop
+    elif letter == "E":
+        continue # skips E...
+    elif letter == "I":
+        continue # skips I...
+    elif letter == "O":
+        continue # skips O...
+    elif letter == "U":
+        continue # skips U...
+    else: # closes loop
+        word_without_vowels += letter # += ADDS TWO STRINGS TOGETHER!!!!
+
+print (word_without_vowels) #prints letters of word minus the vowels (continued statements)
