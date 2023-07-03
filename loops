@@ -67,3 +67,20 @@ while True: # while true loop - loop will continue until the break point
     word = input("Guess again? ")
 Print ("Well done! I am a CHUPACABRA") # ends loop by break and prints well done
 
+#3.2.1.10
+word = input("Enter a word? ") # Prompt the user to enter a str
+word = word.upper()# .upper() changes the str into all capitals.
+
+for letter in word: # letter is a definition NOT a variable
+    if letter == "A": # if letter is the same as A
+        continue # skips A in the programme to end of the loop
+    elif letter == "E":
+        continue # skips E...
+    elif letter == "I":
+        continue # skips I...
+    elif letter == "O":
+        continue # skips O...
+    elif letter == "U":
+        continue # skips U...
+    else: # closes loop 
+        print (letter) #prints letters of word minus the vowels (continued statements)
