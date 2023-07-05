@@ -1,0 +1,15 @@
+# 3.2.1.15
+c0 = int(input("input a number "))# inputs number
+counter = 0 # defines counter
+
+while c0 > 1: # while loop will continue until c0 = 1
+    if c0 %2 != 1: c0 = c0 // 2 # calculates if c0 is an even number
+
+    else: c0 = c0 * 3 + 1
+
+    counter += 1 # adds 1 to the counter per while loop
+
+    print (c0) # prints current value of c0
+                
+print ("number of steps = ", counter) # when number reaches 1, while loop ends and result printed
+
