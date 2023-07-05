@@ -65,7 +65,7 @@ else:
 
 #3 use | to assign bit to 1 
 
-x | 1 = 1
+x | 1 = 1 # flag_register = flag_register | the_mask......flag_register |= the_mask
 x | 0 = x
 
 #check 3
@@ -73,7 +73,7 @@ x | 0 = x
 
 #4 use ^ to make it the opposite/negate your bit
 
-x ^ 1 = ~x
+x ^ 1 = ~x      # flag_register = flag_register ^ the_mask.... flag_register ^= the_mask
 x ^ 0 = x
 
 #check 4
