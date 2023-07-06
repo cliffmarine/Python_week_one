@@ -1,0 +1,26 @@
+#3.4.1.13
+beatles = [] # step 1 creates a blank list
+print("Step 1:", beatles) # prints the list 'beatles'
+
+# step 2
+beatles.append("John Lennon") # append adds to the end of the list
+beatles.append("Paul McCartney")
+beatles.append("George Harrison")
+print("Step 2:", beatles) 
+
+# step 3
+for members in range (2): # members refers to member of the list, range 2 = 2 inputs required
+    beatles.append(input("enter band member ")) # user input
+print("Step 3:", beatles)
+
+# step 4
+del beatles [-1] # -1 deletes from the end of the list
+del beatles [-1] # -1 delets from the end of the list
+print("Step 4:", beatles)
+
+# step 5
+beatles.insert (0,"Ringo Star") # inserts ringo star and position 0 in the list
+print("Step 5:", beatles) # prints updated list
+
+# testing list legth
+print("The Fab", len(beatles)) # len=length prints length of the list = 4
