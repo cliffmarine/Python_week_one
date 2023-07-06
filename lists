@@ -42,3 +42,17 @@ while swapped: # swapped = true, so while loop is only actioned if [i] is not > 
 
 print("\nSorted:")
 print(my_list)
+
+#3.6.1.9
+my_list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
+
+substitute_list = [] #creates empty list
+# for loop required to check old list and ammend new list:-
+for number in my_list:# checks number in my_list 
+    if number not in substitute_list: # checks if number is 'not in' new substitute list
+        substitute_list.append(number) # writes the number to new list if it isn't present
+        
+my_list = substitute_list[:] # overwrites the substitute list to my_list
+print("The list with unique elements only:")
+print(my_list)
+
