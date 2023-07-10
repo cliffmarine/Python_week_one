@@ -23,6 +23,43 @@ for i in range(len(test_data)):
 		print("Failed")
 
 #4.3.1.7
+def is_year_leap(year):
+    
+    if year % 4 != 0: #If the year isn't evenly divisible by 4 its not a leap year
+        return False
+    elif year % 100 != 0: # If the year isn't evenly divisible by 100 its not a leap year
+        return False 
+    elif year % 400 != 0: # If the year isn't evenly divisible by 400 its not a leap year
+        return False
+    elif year < 1582: # If year is before 1582 the georgian calender wasn't invented
+        return False
+    else:
+        return True # year has passed all four checks and is a leap year - return true!
+
+def days_in_month(year,month):
+    
+	if year < 1582 or month < 1 or month > 12: # returns none if error inputted
+		return None
+	days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+	# jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec
+	result = days[month -1] # refernces month in list ??????????WHY MINUS ONE????????
+	print ("this is", result)
+	if month == 2 and is_year_leap(year): # if month feb, and is leap year, return 29 days
+		result = 29
+	return result
+
+test_years = [1900, 2000, 2016, 1987]
+test_months = [ 2, 2, 1, 11]
+test_results = [28, 29, 31, 30]
+for i in range(len(test_years)):
+	yr = test_years[i]
+	mo = test_months[i]
+	print(yr,mo,"-> ",end="")
+	result = days_in_month(yr, mo)
+	if result == test_results[i]:
+		print("OK")
+	else:
+		print("Failed")
 
 
 #4.3.1.8
