@@ -92,9 +92,9 @@ def day_of_year(year, month, day):
 	# validate inputs :-
 	if year < 1582:
 		return None
-	if month < 1 or > 12:
+	if month < 1 or month > 12:
 		return None
-	if day < 0 or > 31:
+	if day < 0 or day > 31:
 		return None
 
 	# calculate days :-
